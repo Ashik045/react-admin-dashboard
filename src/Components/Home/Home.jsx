@@ -1,4 +1,5 @@
 import React from 'react';
+import ItemLists from '../ItemLists/ItemLists';
 import Navbar from '../Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import './Home.scss';
@@ -11,7 +12,13 @@ function Home() {
 
             <div className="home_main">
                 <Navbar />
-                <h2>Home</h2>
+
+                <div className="home_items">
+                    <ItemLists />
+                    <ItemLists />
+                    <ItemLists />
+                    <ItemLists />
+                </div>
             </div>
         </div>
     );

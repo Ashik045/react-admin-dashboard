@@ -1,0 +1,45 @@
+.item_listss {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 6px;
+
+  .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      color: rgb(99, 99, 99);
+    }
+
+    .persentage {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .counts {
+    font-size: 25px;
+    margin: 20px 0px;
+  }
+
+  .see_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      color: rgb(99, 99, 99);
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: rgb(22, 22, 22);
+      }
+    }
+  }
+}

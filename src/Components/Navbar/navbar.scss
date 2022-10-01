@@ -1,7 +1,10 @@
 .navbar {
+  // height: 60px;
   display: flex;
   justify-content: space-between;
-  margin: 10px 25px;
+  align-items: center;
+  padding: 15px 25px;
+  border-bottom: 1px solid #eee;
 
   .search {
     display: flex;
@@ -24,5 +27,41 @@
   .item_lists {
     display: flex;
     align-items: center;
+
+    .item {
+      margin-left: 15px;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .item_icon {
+        font-size: 22px;
+        cursor: pointer;
+      }
+
+      .badge {
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background-color: #7451f8;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        font-weight: bold;
+        position: absolute;
+        top: -7px;
+        right: -7px;
+      }
+
+      .admin_pic {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+    }
   }
 }

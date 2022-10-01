@@ -1,6 +1,14 @@
 .home {
   display: grid;
   grid-template-columns: 17% 83%;
-  //   grid-gap: 25px;
   justify-content: center;
+
+  .home_main {
+    .home_items {
+      display: flex;
+      gap: 20px;
+      padding: 20px 25px;
+      // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+  }
 }
