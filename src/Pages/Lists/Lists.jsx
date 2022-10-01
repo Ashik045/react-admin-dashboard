@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Users() {
+function Lists() {
     //
     return (
         <div>
-            <h2>Users page</h2>
+            <h2>Lists page</h2>
         </div>
     );
 }
 
-export default Users;
+export default Lists;

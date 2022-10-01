@@ -1,39 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+// import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
-import Login from './Pages/Login/Login';
-import PageNotFound from './Pages/NotFound';
-import UserDetail from './Pages/UserDetail/UserDetail';
-import Users from './Pages/users/Users';
+// import Detail from './Pages/Detail/Detail';
+// import Lists from './Pages/Lists/Lists';
+// import Login from './Pages/Login/Login';
+// import PageNotFound from './Pages/NotFound';
 
-const router = createBrowserRouter([
-    {
-        path: '/',
-        element: <App />,
-        errorElement: <PageNotFound />,
-    },
-    {
-        path: '/login',
-        element: <Login />,
-        errorElement: <PageNotFound />,
-    },
-    {
-        path: 'users',
-        element: <Users />,
-        errorElement: <PageNotFound />,
-    },
-    {
-        path: 'user/:userId',
-        element: <UserDetail />,
-        errorElement: <PageNotFound />,
-    },
-]);
+// const router = createBrowserRouter([
+//     {
+//         path: '/',
+//         element: <App />,
+//         errorElement: <PageNotFound />,
+//     },
+//     {
+//         path: '/login',
+//         element: <Login />,
+//         errorElement: <PageNotFound />,
+//     },
+//     {
+//         path: 'users',
+//         element: <Lists />,
+//         errorElement: <PageNotFound />,
+//     },
+//     {
+//         path: 'user/:userId',
+//         element: <Detail />,
+//         errorElement: <PageNotFound />,
+//     },
+// ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router} />
+        <App />
     </React.StrictMode>
 );
 
