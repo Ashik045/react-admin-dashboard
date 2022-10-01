@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 25px;
+
+  .search {
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    border: 0.5px solid lightgray;
+
+    input {
+      border: none;
+      outline: none;
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+
+    .search_icon {
+      cursor: pointer;
+    }
+  }
+
+  .item_lists {
+    display: flex;
+    align-items: center;
+  }
+}
