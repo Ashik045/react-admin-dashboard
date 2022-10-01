@@ -1,11 +1,39 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
+import Login from './Pages/Login/Login';
+import PageNotFound from './Pages/NotFound';
+import UserDetail from './Pages/UserDetail/UserDetail';
+import Users from './Pages/users/Users';
+
+const router = createBrowserRouter([
+    {
+        path: '/',
+        element: <App />,
+        errorElement: <PageNotFound />,
+    },
+    {
+        path: '/login',
+        element: <Login />,
+        errorElement: <PageNotFound />,
+    },
+    {
+        path: 'users',
+        element: <Users />,
+        errorElement: <PageNotFound />,
+    },
+    {
+        path: 'user/:userId',
+        element: <UserDetail />,
+        errorElement: <PageNotFound />,
+    },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <App />
+        <RouterProvider router={router} />
     </React.StrictMode>
 );
 
