@@ -29,7 +29,7 @@ function Home() {
                 </div>
 
                 <div className="table">
-                    <div className="title">Table</div>
+                    <div className="title">Latest Transactions</div>
                     <TableList />
                 </div>
             </div>

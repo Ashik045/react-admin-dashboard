@@ -11,13 +11,20 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
+// import dummy image
+import book1 from '../../Images/book1.jpg';
+import book2 from '../../Images/book2.jpg';
+import book3 from '../../Images/book3.jpg';
+import book4 from '../../Images/book4.jpg';
+import book5 from '../../Images/book5.jpg';
+
 function TableList() {
     // Replace this data with your own
     const data = [
         {
             _id: 23423343,
             product: 'Programing Book 1',
-            image: 'https://www.pexels.com/photo/close-up-photo-of-an-opened-religious-book-1112048/',
+            image: book1,
             customer: 'Devid John',
             date: '3 October, 2022',
             ammount: 45,
@@ -27,7 +34,7 @@ function TableList() {
         {
             _id: 235343343,
             product: 'Programing Book 2',
-            image: 'https://www.pexels.com/photo/close-up-photo-of-an-opened-religious-book-1112048/',
+            image: book2,
             customer: 'Julia Ani',
             date: '23 April, 2022',
             ammount: 55,
@@ -37,7 +44,7 @@ function TableList() {
         {
             _id: 234239873,
             product: 'Programing Book 3',
-            image: 'https://www.pexels.com/photo/close-up-photo-of-an-opened-religious-book-1112048/',
+            image: book3,
             customer: 'John Smith',
             date: '10 October, 2022',
             ammount: 25,
@@ -47,7 +54,7 @@ function TableList() {
         {
             _id: 23423143,
             product: 'Programing Book 4',
-            image: 'https://www.pexels.com/photo/close-up-photo-of-an-opened-religious-book-1112048/',
+            image: book4,
             customer: 'Devid John',
             date: '3 March, 2022',
             ammount: 40,
@@ -57,7 +64,7 @@ function TableList() {
         {
             _id: 123423343,
             product: 'Programing Book 5',
-            image: 'https://www.pexels.com/photo/close-up-photo-of-an-opened-religious-book-1112048/',
+            image: book5,
             customer: 'Humlar',
             date: '20 November, 2022',
             ammount: 45,
@@ -67,7 +74,7 @@ function TableList() {
         {
             _id: 2333343,
             product: 'Programing Book 6',
-            image: 'https://www.pexels.com/photo/close-up-photo-of-an-opened-religious-book-1112048/',
+            image: book2,
             customer: 'Devid John',
             date: '12 June, 2022',
             ammount: 28,
@@ -75,6 +82,7 @@ function TableList() {
             status: 'Pending',
         },
     ];
+
     return (
         <TableContainer component={Paper} className="table_list">
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -93,14 +101,19 @@ function TableList() {
                     {data.map((row) => (
                         <TableRow key={row._id}>
                             <TableCell component="th" scope="row">
-                                {row._id}
+                                <div className="product_idd">
+                                    <img src={row.image} alt="product" className="product_img" />
+                                    {row._id}
+                                </div>
                             </TableCell>
                             <TableCell className="table_cell">{row.product}</TableCell>
                             <TableCell className="table_cell">{row.customer}</TableCell>
                             <TableCell className="table_cell">{row.ammount}</TableCell>
                             <TableCell className="table_cell">{row.date}</TableCell>
                             <TableCell className="table_cell">{row.method}</TableCell>
-                            <TableCell className="table_cell">{row.status}</TableCell>
+                            <TableCell className="table_cell">
+                                <span className={`status ${row.status}`}>{row.status}</span>
+                            </TableCell>
                         </TableRow>
                     ))}
                 </TableBody>

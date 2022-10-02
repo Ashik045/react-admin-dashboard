@@ -64,7 +64,7 @@ function Chart() {
                     <p>Last 1 year (Revenue)</p>
                 </div>
                 <AreaChart
-                    width={800}
+                    width={850}
                     height={450}
                     data={data}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
