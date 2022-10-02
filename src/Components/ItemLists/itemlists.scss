@@ -19,12 +19,21 @@
     .persentage {
       display: flex;
       align-items: center;
+
+      &.negetive {
+        color: red;
+      }
+      &.positive {
+        color: green;
+      }
     }
   }
 
   .counts {
     font-size: 25px;
     margin: 20px 0px;
+    display: flex;
+    align-items: center;
   }
 
   .see_item {
@@ -36,10 +45,17 @@
       color: rgb(99, 99, 99);
       cursor: pointer;
       transition: all 0.3s ease;
+      text-decoration: underline;
 
       &:hover {
         color: rgb(22, 22, 22);
       }
+    }
+
+    .icon {
+      padding: 5px;
+      font-size: 30px;
+      border-radius: 4px;
     }
   }
 }
