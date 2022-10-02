@@ -34,6 +34,9 @@ function Navbar() {
                     <FullscreenExitIcon className="item_icon" />
                 </div>
                 <div className="item">
+                    <ListIcon className="item_icon" />
+                </div>
+                <div className="item">
                     <NotificationsNoneIcon className="item_icon" />
                     <span className="badge">1</span>
                 </div>
@@ -41,9 +44,7 @@ function Navbar() {
                     <ChatBubbleOutlineIcon className="item_icon" />
                     <span className="badge">2</span>
                 </div>
-                <div className="item">
-                    <ListIcon className="item_icon" />
-                </div>
+
                 <div className="item">
                     <img className="admin_pic" src={admin} alt="admin" />
                 </div>

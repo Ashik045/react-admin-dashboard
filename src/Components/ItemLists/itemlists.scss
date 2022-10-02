@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
 .item_listss {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   display: flex;
@@ -13,7 +15,7 @@
     justify-content: space-between;
 
     p {
-      color: rgb(99, 99, 99);
+      color: gray;
     }
 
     .persentage {
@@ -34,6 +36,7 @@
     margin: 20px 0px;
     display: flex;
     align-items: center;
+    font-family: "Roboto", sans-serif;
   }
 
   .see_item {
@@ -42,7 +45,7 @@
     align-items: center;
 
     p {
-      color: rgb(99, 99, 99);
+      color: gray;
       cursor: pointer;
       transition: all 0.3s ease;
       text-decoration: underline;

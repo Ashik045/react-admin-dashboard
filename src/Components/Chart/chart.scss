@@ -1,0 +1,13 @@
+.chart_sec {
+  display: flex;
+  flex: 8;
+
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+  .strokee {
+    stroke: rgb(228, 225, 225);
+  }
+}

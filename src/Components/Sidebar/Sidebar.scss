@@ -4,6 +4,7 @@ $text_color: #3d3c42;
 .sidebar {
   border-right: 1px solid #eee;
   height: 100vh;
+  margin-left: 10px;
 
   .logo {
     cursor: pointer;
@@ -20,7 +21,7 @@ $text_color: #3d3c42;
     ul {
       .spann {
         text-transform: uppercase;
-        color: $text_color;
+        color: gray;
         margin: 10px 0px 5px;
         font-size: 14px;
       }
