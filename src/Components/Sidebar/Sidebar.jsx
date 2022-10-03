@@ -7,6 +7,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import TableChartIcon from '@mui/icons-material/TableChart';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Sidebar.scss';
 
 function Sidebar() {
@@ -14,7 +15,9 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <div className="logo">
-                <h3>adminDashboard</h3>
+                <Link to="/">
+                    <h3>adminDashboard</h3>
+                </Link>
             </div>
 
             <div className="links">

@@ -1,0 +1,12 @@
+.list_page {
+  display: grid;
+  grid-template-columns: 17% 83%;
+  justify-content: center;
+  width: 100%;
+
+  .list_page_main {
+    .data_table {
+      padding: 10px 10px;
+    }
+  }
+}

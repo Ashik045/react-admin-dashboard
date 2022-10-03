@@ -2,9 +2,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './app.module.scss';
 import Home from './Components/Home/Home';
 import Detail from './Pages/Detail/Detail';
-import Lists from './Pages/Lists/Lists';
 import Login from './Pages/Login/Login';
 import New from './Pages/New/New';
+import Lists from './Pages/UserLists/UserLists';
 // import PageNotFound from './Pages/NotFound';
 
 function App() {
