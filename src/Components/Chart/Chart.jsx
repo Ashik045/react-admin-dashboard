@@ -56,16 +56,16 @@ const data = [
     },
 ];
 
-function Chart() {
+function Chart({ height, title }) {
     return (
         <div className="chart_sec">
             <div>
                 <div className="title">
-                    <p>Last 1 year (Revenue)</p>
+                    <p>{title} (Last 1 year)</p>
                 </div>
                 <AreaChart
                     width={850}
-                    height={450}
+                    height={height}
                     data={data}
                     margin={{ top: 10, right: 30, left: 0, bottom: 0 }}
                 >

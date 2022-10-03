@@ -1,0 +1,47 @@
+.add_new {
+  display: grid;
+  grid-template-columns: 17% 83%;
+  justify-content: center;
+
+  .new_page {
+    .new_page_main {
+      padding: 20px 25px;
+      .new_page_content {
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        display: flex;
+        gap: 10;
+        padding: 20px;
+        border-radius: 4px;
+
+        .image {
+          flex: 4;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .add_new_user {
+            color: rgba(128, 128, 128, 0.603);
+            font-size: 25px;
+            margin-right: auto;
+          }
+
+          img {
+            height: 150px;
+            width: 150px;
+            padding: 20px;
+            background-color: rgba(128, 128, 128, 0.288);
+            object-fit: cover;
+            margin-top: 20px;
+            // margin-left: auto;
+            border-radius: 50%;
+          }
+        }
+
+        .form {
+          flex: 8;
+        }
+      }
+    }
+  }
+}

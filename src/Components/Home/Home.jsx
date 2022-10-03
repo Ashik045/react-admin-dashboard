@@ -25,7 +25,7 @@ function Home() {
 
                 <div className="chart_sec">
                     <ProgressBar />
-                    <Chart />
+                    <Chart height={450} title="Revenue" />
                 </div>
 
                 <div className="table">

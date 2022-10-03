@@ -1,0 +1,55 @@
+.details {
+  display: grid;
+  grid-template-columns: 17% 83%;
+  justify-content: center;
+
+  .detail_page_main {
+    .user_info {
+      display: flex;
+      // align-items: center;
+      gap: 30px;
+      padding: 30px 25px;
+
+      .user_detail {
+        box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+        text-align: center;
+        padding: 20px;
+        border-radius: 3px;
+        flex: 3;
+        height: fit-content;
+
+        .user_image {
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .user_detailss {
+          margin-top: 10px;
+
+          p {
+            margin-bottom: 10px;
+          }
+
+          .name {
+            font-size: 30px;
+          }
+        }
+      }
+
+      .user_chart {
+        flex: 9;
+      }
+    }
+
+    .table {
+      padding: 20px 25px;
+
+      .title {
+        color: gray;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

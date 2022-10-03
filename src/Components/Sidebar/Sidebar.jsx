@@ -15,7 +15,7 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <div className="logo">
-                <Link to="/">
+                <Link to="/" className="text_none">
                     <h3>adminDashboard</h3>
                 </Link>
             </div>

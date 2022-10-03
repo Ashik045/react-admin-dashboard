@@ -15,6 +15,7 @@ function ItemLists({ type }) {
             data = {
                 title: 'USERS',
                 isMoney: false,
+                count: 23232,
                 icon: (
                     <PermIdentityIcon
                         style={{
@@ -31,6 +32,8 @@ function ItemLists({ type }) {
             data = {
                 title: 'ORDERS',
                 isMoney: false,
+                count: 342,
+
                 icon: (
                     <LocalGroceryStoreOutlinedIcon
                         style={{
@@ -47,6 +50,7 @@ function ItemLists({ type }) {
             data = {
                 title: 'EARNINGS',
                 isMoney: true,
+                count: 43231,
                 icon: (
                     <AttachMoneyOutlinedIcon
                         style={{
@@ -56,12 +60,13 @@ function ItemLists({ type }) {
                         className="icon"
                     />
                 ),
-                link: 'See new earnings',
+                link: 'See net earnings',
             };
             break;
         case 'balance':
             data = {
                 title: 'BALANCE',
+                count: 52144,
                 isMoney: true,
                 icon: (
                     <PaidOutlinedIcon
@@ -89,7 +94,10 @@ function ItemLists({ type }) {
                 </span>
             </div>
 
-            <div className="counts">{data.isMoney && <AttachMoneyOutlinedIcon />}23232</div>
+            <div className="counts">
+                {data.isMoney && <AttachMoneyOutlinedIcon />}
+                {data.count}
+            </div>
 
             <div className="see_item">
                 <p>{data.link}</p>
