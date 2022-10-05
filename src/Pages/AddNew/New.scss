@@ -12,14 +12,9 @@
         gap: 10;
         padding: 20px;
         border-radius: 4px;
-        // position: relative;
 
         .image {
           flex: 4;
-          // display: flex;
-          // flex-direction: column;
-          // justify-content: center;
-          // align-items: center;
 
           .add_new_user {
             color: rgba(128, 128, 128, 0.603);
@@ -44,6 +39,7 @@
           grid-template-columns: 45% 45%;
           justify-content: space-around;
           grid-gap: 15px;
+          position: relative;
 
           .form_inp {
             label {
@@ -58,17 +54,25 @@
           }
 
           .submit_btn {
+            margin-top: 15px;
             display: block;
             width: 200px;
-            margin-left: 158%;
-            padding: 10px 15px;
+            padding: 9px 15px;
             border: none;
             background: none;
             background-color: #7451f8;
+            border: 1px solid #7451f8;
             color: white;
             font-size: 17px;
             border-radius: 4px;
             cursor: pointer;
+            transition: all 0.2s ease;
+
+            &:hover {
+              background-color: white;
+              color: #7451f8;
+              border: 1px solid #7451f8;
+            }
           }
         }
       }

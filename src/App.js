@@ -118,7 +118,7 @@ function App() {
                         <Route path="login" element={<Login />} />
                         {/* nested routes */}
                         <Route path="users">
-                            <Route index element={<Lists />} />
+                            <Route index element={<Lists type="user" />} />
                             <Route path=":userId" element={<Detail />} />
                             <Route
                                 path="addnew"
@@ -128,7 +128,7 @@ function App() {
 
                         {/* nested routes */}
                         <Route path="products">
-                            <Route index element={<Lists />} />
+                            <Route index element={<Lists type="product" />} />
                             <Route path=":productId" element={<Detail />} />
                             <Route
                                 path="addnew"

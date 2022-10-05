@@ -7,6 +7,32 @@
   .list_page_main {
     .data_table {
       padding: 10px 10px;
+
+      .btnn {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        button {
+          margin-top: 15px;
+          display: block;
+          background: none;
+          border: 1px solid #7451f8;
+          padding: 8px 15px;
+          background-color: #7451f8;
+          color: white;
+          font-size: 17px;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-left: auto;
+          transition: all 0.3s ease;
+          text-transform: capitalize;
+
+          &:hover {
+            background-color: white;
+            color: #7451f8;
+            border: 1px solid #7451f8;
+          }
+        }
+      }
     }
   }
 }
