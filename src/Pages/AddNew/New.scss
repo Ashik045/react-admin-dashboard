@@ -30,11 +30,9 @@
           img {
             height: 150px;
             width: 150px;
-            padding: 20px;
             background-color: rgba(128, 128, 128, 0.288);
             object-fit: cover;
             margin-top: 20px;
-            // margin-left: auto;
             border-radius: 50%;
             margin-left: 30%;
           }
@@ -42,6 +40,36 @@
 
         .form {
           flex: 8;
+          display: grid;
+          grid-template-columns: 45% 45%;
+          justify-content: space-around;
+          grid-gap: 15px;
+
+          .form_inp {
+            label {
+              display: flex;
+              align-items: center;
+            }
+            .file_icon {
+              cursor: pointer;
+              margin-left: 10px;
+              font-size: 30px;
+            }
+          }
+
+          .submit_btn {
+            display: block;
+            width: 200px;
+            margin-left: 158%;
+            padding: 10px 15px;
+            border: none;
+            background: none;
+            background-color: #7451f8;
+            color: white;
+            font-size: 17px;
+            border-radius: 4px;
+            cursor: pointer;
+          }
         }
       }
     }

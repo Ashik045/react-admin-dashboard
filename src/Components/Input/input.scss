@@ -1,24 +1,28 @@
 .input_component {
   .input_field {
     padding: 7px 12px;
-    // display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     border-radius: 3px;
     border: none;
     outline: none;
     border: 1px solid gray;
+    width: 100%;
   }
 
   span {
     color: rgba(255, 0, 0, 0.747);
-    margin-top: -10px;
+    margin-top: 3px;
     display: block;
     font-size: 14px;
-    margin-bottom: 7px;
+    margin-bottom: 0px;
     display: none;
   }
 
   .input_field:invalid[focused="true"] ~ span {
     display: block;
+  }
+
+  .input_field:invalid[focused="true"] ~ .input_field {
+    border: 1px solid red;
   }
 }
