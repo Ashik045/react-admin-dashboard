@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
@@ -6,12 +7,15 @@ import LogoutIcon from '@mui/icons-material/Logout';
 import PersonIcon from '@mui/icons-material/Person';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
 import TableChartIcon from '@mui/icons-material/TableChart';
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { ColorContext } from '../../ColorContext/darkContext';
 import './Sidebar.scss';
 
 function Sidebar() {
-    //
+    // color state management using react context
+    const { darkMode, dispatch } = useContext(ColorContext);
+
     return (
         <div className="sidebar">
             <div className="logo">
@@ -63,8 +67,9 @@ function Sidebar() {
             </div>
 
             <div className="colorss">
-                <div className="color_option" />
-                <div className="color_option" />
+                <div className="color_option" onClick={() => dispatch({ type: 'LIGHT' })} />
+
+                <div className="color_option" onClick={() => dispatch({ type: 'DARK' })} />
             </div>
         </div>
     );

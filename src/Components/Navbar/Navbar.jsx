@@ -1,11 +1,12 @@
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
-import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import LanguageIcon from '@mui/icons-material/Language';
-import ListIcon from '@mui/icons-material/List';
+import LightModeIcon from '@mui/icons-material/LightMode';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import SearchIcon from '@mui/icons-material/Search';
-import React from 'react';
+import React, { useContext } from 'react';
+import { ColorContext } from '../../ColorContext/darkContext';
 
 // import sass file
 import './navbar.scss';
@@ -14,6 +15,9 @@ import './navbar.scss';
 import admin from '../../Images/admin_pic.jpg';
 
 function Navbar() {
+    // color state management using react context
+    const { darkMode, dispatch } = useContext(ColorContext);
+
     return (
         <div className="navbar">
             <div className="search">
@@ -28,13 +32,20 @@ function Navbar() {
                     <p>English</p>
                 </div>
                 <div className="item">
-                    <DarkModeOutlinedIcon className="item_icon" />
+                    {!darkMode ? (
+                        <DarkModeIcon
+                            className="item_icon"
+                            onClick={() => dispatch({ type: 'TOGGLE' })}
+                        />
+                    ) : (
+                        <LightModeIcon
+                            className="item_icon white"
+                            onClick={() => dispatch({ type: 'TOGGLE' })}
+                        />
+                    )}
                 </div>
                 <div className="item">
                     <FullscreenExitIcon className="item_icon" />
-                </div>
-                <div className="item">
-                    <ListIcon className="item_icon" />
                 </div>
                 <div className="item">
                     <NotificationsNoneIcon className="item_icon" />

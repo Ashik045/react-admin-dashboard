@@ -10,7 +10,7 @@ import 'react-circular-progressbar/dist/styles.css';
 import './progressBar.scss';
 
 function ProgressBar() {
-    const percentage = 66;
+    const percentage = 74;
     return (
         <div className="progress_bar">
             <div className="top">

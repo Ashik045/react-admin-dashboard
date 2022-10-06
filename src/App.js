@@ -1,5 +1,7 @@
+import { useContext } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './app.scss';
+import { ColorContext } from './ColorContext/darkContext';
 import Home from './Components/Home/Home';
 import AddNew from './Pages/AddNew/AddNew';
 import Detail from './Pages/Detail/Detail';
@@ -107,8 +109,11 @@ const productInpDetails = [
 ];
 
 function App() {
+    // color state management using react context
+    const { darkMode } = useContext(ColorContext);
+
     return (
-        <div className="App dark">
+        <div className={darkMode ? 'App dark' : 'App'}>
             <BrowserRouter>
                 <Routes>
                     <Route path="/">

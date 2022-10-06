@@ -38,6 +38,10 @@
       .item_icon {
         font-size: 22px;
         cursor: pointer;
+
+        &.white {
+          color: rgba(255, 255, 255, 0.699);
+        }
       }
 
       .badge {
