@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import DataTable from '../../Components/DataTable/DataTable';
 import Navbar from '../../Components/Navbar/Navbar';
 import Sidebar from '../../Components/Sidebar/Sidebar';
+import TableList from '../../Components/TableList/TableList';
 import './userlists.scss';
 
 function Lists({ type }) {
@@ -17,12 +18,15 @@ function Lists({ type }) {
                 {/* mui data table */}
                 <div className="data_table">
                     <div className="btnn">
-                        <Link to="/users/addnew" style={{ textDecoration: 'none' }}>
+                        <Link
+                            to={`/${type === 'user' ? 'users' : 'products'}/addnew`}
+                            style={{ textDecoration: 'none' }}
+                        >
                             <button type="button">Add New {type}</button>
                         </Link>
                     </div>
 
-                    <DataTable />
+                    {type === 'user' ? <DataTable /> : <TableList />}
                 </div>
             </div>
         </div>

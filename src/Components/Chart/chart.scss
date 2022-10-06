@@ -1,6 +1,7 @@
 .chart_sec {
   display: flex;
   flex: 8;
+  box-sizing: border-box;
 
   .title {
     color: grey;

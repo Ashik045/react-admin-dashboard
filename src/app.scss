@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.App.dark {
+  background-color: #111;
+  color: rgb(156, 156, 156);
+
+  .strokee {
+    stroke: rgba(228, 228, 228, 0.151);
+  }
+
+  .table_list {
+    background-color: #111;
+
+    .table_cell {
+      color: gray;
+    }
+  }
+
+  .navbar {
+    color: rgb(138, 138, 138);
+    border-color: #333;
+  }
+
+  .sidebar {
+    .logo {
+      border-color: #333;
+
+      h3 {
+        color: rgb(160, 158, 158);
+      }
+    }
+
+    .links {
+      ul {
+        li {
+          color: gray;
+
+          &:hover {
+            background-color: #333;
+          }
+        }
+      }
+    }
+  }
+
+  .progress_bar {
+    .middle {
+      .price {
+        color: rgb(153, 152, 152);
+      }
+    }
+  }
+
+  .data_table {
+    .data_grid {
+      color: gray;
+      border: none;
+    }
+  }
+
+  .list_page {
+    .list_page_main {
+      .data_table {
+        // background-color: #111;
+        color: gray;
+      }
+    }
+  }
+
+  input {
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.925);
+  }
+
+  .add_new {
+    .new_page {
+      .new_page_main {
+        .new_page_content {
+          box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 4px 0px,
+            rgba(255, 255, 255, 0.1) 0px 1px 3px 0px;
+        }
+      }
+    }
+  }
+}

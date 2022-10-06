@@ -1,12 +1,10 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './app.module.scss';
+import './app.scss';
 import Home from './Components/Home/Home';
 import AddNew from './Pages/AddNew/AddNew';
 import Detail from './Pages/Detail/Detail';
 import Login from './Pages/Login/Login';
 import Lists from './Pages/UserLists/UserLists';
-
-// import PageNotFound from './Pages/NotFound';
 
 // Dynamicaly change the data for different pages
 const userInpDetails = [
@@ -110,7 +108,7 @@ const productInpDetails = [
 
 function App() {
     return (
-        <div className="App">
+        <div className="App dark">
             <BrowserRouter>
                 <Routes>
                     <Route path="/">

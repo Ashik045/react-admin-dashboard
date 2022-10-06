@@ -100,7 +100,7 @@ function TableList() {
                 <TableBody>
                     {data.map((row) => (
                         <TableRow key={row._id}>
-                            <TableCell component="th" scope="row">
+                            <TableCell component="th" scope="row" className="table_cell">
                                 <div className="product_idd">
                                     <img src={row.image} alt="product" className="product_img" />
                                     {row._id}

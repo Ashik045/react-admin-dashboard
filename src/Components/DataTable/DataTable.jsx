@@ -160,6 +160,7 @@ function DataTable() {
     return (
         <div className="data_table">
             <DataGrid
+                className="data_grid"
                 rows={userData}
                 columns={columns}
                 pageSize={10}

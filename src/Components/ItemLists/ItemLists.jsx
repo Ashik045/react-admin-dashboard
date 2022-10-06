@@ -4,6 +4,7 @@ import LocalGroceryStoreOutlinedIcon from '@mui/icons-material/LocalGroceryStore
 import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
 import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './itemlists.scss';
 
 function ItemLists({ type }) {
@@ -26,6 +27,7 @@ function ItemLists({ type }) {
                     />
                 ),
                 link: 'See all users',
+                linkto: '/users',
             };
             break;
         case 'order':
@@ -44,6 +46,7 @@ function ItemLists({ type }) {
                     />
                 ),
                 link: 'View all orders',
+                linkto: '/',
             };
             break;
         case 'earning':
@@ -61,6 +64,7 @@ function ItemLists({ type }) {
                     />
                 ),
                 link: 'See net earnings',
+                linkto: '/',
             };
             break;
         case 'balance':
@@ -78,6 +82,7 @@ function ItemLists({ type }) {
                     />
                 ),
                 link: 'See all details',
+                linkto: '/',
             };
             break;
         default:
@@ -100,7 +105,9 @@ function ItemLists({ type }) {
             </div>
 
             <div className="see_item">
-                <p>{data.link}</p>
+                <Link to={data.linkto}>
+                    <p>{data.link}</p>
+                </Link>
                 {data.icon}
             </div>
         </div>
