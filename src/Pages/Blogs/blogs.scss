@@ -1,0 +1,80 @@
+.blog_page {
+  display: grid;
+  grid-template-columns: 17% 83%;
+  justify-content: center;
+  width: 100%;
+
+  .blog_page_main {
+    .blog_page_table {
+      height: 660px;
+      width: 100%;
+      padding: 10px 10px;
+
+      .btnn {
+        margin-bottom: 10px;
+        margin-right: 10px;
+        button {
+          margin-top: 15px;
+          display: block;
+          background: none;
+          border: 1px solid #7451f8;
+          padding: 8px 15px;
+          background-color: #7451f8;
+          color: white;
+          font-size: 17px;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-left: auto;
+          transition: all 0.3s ease;
+          text-transform: capitalize;
+
+          &:hover {
+            background-color: white;
+            color: #7451f8;
+            border: 1px solid #7451f8;
+          }
+        }
+      }
+
+      .userr {
+        display: flex;
+        align-items: center;
+
+        .userr_image {
+          height: 36px;
+          width: 36px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-right: 10px;
+        }
+      }
+
+      .actionn {
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+
+        .view_btn {
+          padding: 5px 12px;
+          cursor: pointer;
+          border-radius: 4px;
+          border: none;
+          margin-right: 10px;
+          color: #7551f8d2;
+          border: 1px solid #7551f8bd;
+          background: none;
+        }
+
+        .delete_btn {
+          padding: 5px 12px;
+          cursor: pointer;
+          border-radius: 4px;
+          border: none;
+          color: #ff74b0f5;
+          border: 1px solid #ff74b0cb;
+          background: none;
+        }
+      }
+    }
+  }
+}

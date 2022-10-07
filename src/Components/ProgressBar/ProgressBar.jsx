@@ -24,6 +24,7 @@ function ProgressBar() {
                         value={percentage}
                         text={`${percentage}%`}
                         strokeWidth={5}
+                        className="progress_main"
                     />
                 </div>
                 <p>Total sales made today.</p>
@@ -39,7 +40,7 @@ function ProgressBar() {
                 <div className="botom_nested">
                     <div className="nested_nested">
                         <p>Target</p>
-                        <p className="pricee decrese">
+                        <p className="pricee ">
                             <KeyboardArrowDownOutlinedIcon /> $10.4k
                         </p>
                     </div>
@@ -51,7 +52,7 @@ function ProgressBar() {
                     </div>
                     <div className="nested_nested">
                         <p>Last Month</p>
-                        <p className="pricee">
+                        <p className="pricee decrese">
                             <KeyboardArrowUpOutlinedIcon /> $12.4k
                         </p>
                     </div>

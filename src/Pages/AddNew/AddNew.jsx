@@ -11,6 +11,7 @@ import './New.scss';
 function AddNew({ inputs, titlee, type }) {
     let dynamicInpVal;
 
+    // dynamically change the state values
     switch (type) {
         case 'USER':
             dynamicInpVal = {
@@ -28,6 +29,13 @@ function AddNew({ inputs, titlee, type }) {
                 category: '',
                 price: '',
                 stock: '',
+            };
+            break;
+        case 'BLOG':
+            dynamicInpVal = {
+                title: '',
+                description: '',
+                tags: '',
             };
             break;
         default:

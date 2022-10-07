@@ -1,3 +1,5 @@
+/* eslint-disable no-constant-condition */
+/* eslint-disable no-nested-ternary */
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DataTable from '../../Components/DataTable/DataTable';
@@ -19,7 +21,9 @@ function Lists({ type }) {
                 <div className="data_table">
                     <div className="btnn">
                         <Link
-                            to={`/${type === 'user' ? 'users' : 'products'}/addnew`}
+                            to={`/${
+                                type === 'product' ? 'products' : 'user' ? 'users' : 'blogs'
+                            }/addnew`}
                             style={{ textDecoration: 'none' }}
                         >
                             <button type="button">Add New {type}</button>

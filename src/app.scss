@@ -100,4 +100,35 @@
       }
     }
   }
+
+  .blog_page {
+    .blog_page_main {
+      .blog_page_table {
+        .data_grid {
+          color: gray;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .blog_details {
+    .detail_page_main {
+      .blog_detailss {
+        h1 {
+          color: gray;
+        }
+
+        p {
+          color: gray;
+        }
+
+        .blog_detail_tv {
+          p {
+            color: gray;
+          }
+        }
+      }
+    }
+  }
 }

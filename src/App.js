@@ -4,6 +4,8 @@ import './app.scss';
 import { ColorContext } from './ColorContext/darkContext';
 import Home from './Components/Home/Home';
 import AddNew from './Pages/AddNew/AddNew';
+import BlogDetail from './Pages/BlogDetail/BlogDetail';
+import Blogs from './Pages/Blogs/Blogs';
 import Detail from './Pages/Detail/Detail';
 import Login from './Pages/Login/Login';
 import Lists from './Pages/UserLists/UserLists';
@@ -107,6 +109,35 @@ const productInpDetails = [
         errorMsg: 'This field is required!',
     },
 ];
+const blogInputs = [
+    {
+        id: 1,
+        name: 'title',
+        lable: 'Title',
+        type: 'text',
+        placeholder: 'Blog title',
+        required: true,
+        errorMsg: 'Title is required!',
+    },
+    {
+        id: 2,
+        name: 'description',
+        lable: 'Description',
+        type: 'text',
+        placeholder: 'Blog description',
+        required: true,
+        errorMsg: 'Description is required!',
+    },
+    {
+        id: 3,
+        name: 'tags',
+        lable: 'Tags',
+        type: 'text',
+        placeholder: 'Travel, Communication',
+        required: true,
+        errorMsg: 'Tag is required!',
+    },
+];
 
 function App() {
     // color state management using react context
@@ -147,6 +178,17 @@ function App() {
                                         titlee="Add New Product"
                                         type="PRODUCT"
                                     />
+                                }
+                            />
+                        </Route>
+
+                        <Route path="blogs">
+                            <Route index element={<Blogs type="blog" />} />
+                            <Route path=":blogId" element={<BlogDetail />} />
+                            <Route
+                                path="addnew"
+                                element={
+                                    <AddNew inputs={blogInputs} titlee="Add New Blog" type="BLOG" />
                                 }
                             />
                         </Route>
