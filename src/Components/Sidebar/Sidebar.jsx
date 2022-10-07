@@ -3,6 +3,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import DashboardIcon from '@mui/icons-material/Dashboard';
+import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import LogoutIcon from '@mui/icons-material/Logout';
 import PersonIcon from '@mui/icons-material/Person';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
@@ -45,7 +46,9 @@ function Sidebar() {
                             <TableChartIcon className="icon" /> Products
                         </li>
                     </Link>
-
+                    <li>
+                        <LibraryBooksIcon className="icon" /> Blogs
+                    </li>
                     <li>
                         <CreditCardIcon className="icon" /> Orders
                     </li>
@@ -64,12 +67,6 @@ function Sidebar() {
                         <LogoutIcon className="icon" /> Log Out
                     </li>
                 </ul>
-            </div>
-
-            <div className="colorss">
-                <div className="color_option" onClick={() => dispatch({ type: 'LIGHT' })} />
-
-                <div className="color_option" onClick={() => dispatch({ type: 'DARK' })} />
             </div>
         </div>
     );

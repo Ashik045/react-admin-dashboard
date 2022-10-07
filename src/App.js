@@ -125,7 +125,13 @@ function App() {
                             <Route path=":userId" element={<Detail />} />
                             <Route
                                 path="addnew"
-                                element={<AddNew inputs={userInpDetails} title="Add New User" />}
+                                element={
+                                    <AddNew
+                                        inputs={userInpDetails}
+                                        titlee="Add New User"
+                                        type="USER"
+                                    />
+                                }
                             />
                         </Route>
 
@@ -136,7 +142,11 @@ function App() {
                             <Route
                                 path="addnew"
                                 element={
-                                    <AddNew inputs={productInpDetails} title="Add New Product" />
+                                    <AddNew
+                                        inputs={productInpDetails}
+                                        titlee="Add New Product"
+                                        type="PRODUCT"
+                                    />
                                 }
                             />
                         </Route>

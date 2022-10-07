@@ -16,6 +16,8 @@ function Home() {
             <div className="home_main">
                 <Navbar />
 
+                <div className="bg_color" />
+
                 <div className="home_items">
                     <ItemLists type="user" />
                     <ItemLists type="order" />

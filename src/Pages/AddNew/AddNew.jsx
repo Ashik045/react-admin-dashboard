@@ -8,14 +8,33 @@ import Sidebar from '../../Components/Sidebar/Sidebar';
 import noImage from '../../Images/photo-camera.png';
 import './New.scss';
 
-function AddNew({ inputs, title }) {
-    const [userInp, setUserInp] = useState({
-        username: '',
-        name: '',
-        email: '',
-        password: '',
-        address: '',
-    });
+function AddNew({ inputs, titlee, type }) {
+    let dynamicInpVal;
+
+    switch (type) {
+        case 'USER':
+            dynamicInpVal = {
+                username: '',
+                name: '',
+                email: '',
+                password: '',
+                address: '',
+            };
+            break;
+        case 'PRODUCT':
+            dynamicInpVal = {
+                title: '',
+                description: '',
+                category: '',
+                price: '',
+                stock: '',
+            };
+            break;
+        default:
+            break;
+    }
+    const [userInp, setUserInp] = useState(dynamicInpVal);
+
     const [file, setFile] = useState('');
 
     const image = false;
@@ -28,6 +47,7 @@ function AddNew({ inputs, title }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log(userInp);
     };
     return (
         <div className="add_new">
@@ -39,7 +59,7 @@ function AddNew({ inputs, title }) {
                 <div className="new_page_main">
                     <div className="new_page_content">
                         <div className="image">
-                            <p className="add_new_user">{title}</p>
+                            <p className="add_new_user">{titlee}</p>
                             <img src={file ? URL.createObjectURL(file) : noImage} alt="" />
                         </div>
 
