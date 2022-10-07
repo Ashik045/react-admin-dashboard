@@ -6,20 +6,21 @@ An admin dashboard allows at-a-glance access to the crucial information for the 
 
 - Content Management
 - User Authorization and management
+- Client-side validation & Image Upload
 - Security and Permissions
 - Viewing Data and editing
 - CRUD functionality or management.
 - Dark & Light Mode
-- Client-side authentication & Image Upload
 
 Live URL: https://react-admin-dashboard-virid.vercel.app
 
 ==============
 
 Light Mode:
-![light1](https://user-images.githubusercontent.com/78463849/194304199-7816fea5-91b3-4dc8-b3b2-ef46b2f2bba6.png)
+![light1](https://user-images.githubusercontent.com/78463849/194511527-87b44371-f7ee-4378-a3c8-aacca5d97c0b.png)
 
 
 
 Dark Mode:
-![dark1](https://user-images.githubusercontent.com/78463849/194304385-60901ca5-6b00-4203-a639-1fe833ea938e.png)
+![dark1](https://user-images.githubusercontent.com/78463849/194511555-319272d1-fe56-4a04-9e91-e2080c30ad2b.png)
+
