@@ -16,7 +16,7 @@ function ItemLists({ type }) {
             data = {
                 title: 'USERS',
                 isMoney: false,
-                count: 23232,
+                count: 232,
                 icon: (
                     <PermIdentityIcon
                         style={{
@@ -32,9 +32,9 @@ function ItemLists({ type }) {
             break;
         case 'order':
             data = {
-                title: 'ORDERS',
+                title: 'HOTELS',
                 isMoney: false,
-                count: 342,
+                count: 34,
 
                 icon: (
                     <LocalGroceryStoreOutlinedIcon
@@ -45,15 +45,15 @@ function ItemLists({ type }) {
                         className="icon"
                     />
                 ),
-                link: 'View all orders',
+                link: 'View all hotels',
                 linkto: '/',
             };
             break;
         case 'earning':
             data = {
-                title: 'EARNINGS',
+                title: 'BLOGS',
                 isMoney: true,
-                count: 43231,
+                count: 67,
                 icon: (
                     <AttachMoneyOutlinedIcon
                         style={{
@@ -63,14 +63,14 @@ function ItemLists({ type }) {
                         className="icon"
                     />
                 ),
-                link: 'See net earnings',
+                link: 'See all blogs',
                 linkto: '/',
             };
             break;
         case 'balance':
             data = {
                 title: 'BALANCE',
-                count: 52144,
+                count: 444,
                 isMoney: true,
                 icon: (
                     <PaidOutlinedIcon

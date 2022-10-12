@@ -1,16 +1,23 @@
 import AttachMoneyOutlinedIcon from '@mui/icons-material/AttachMoneyOutlined';
-import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
+import { Tooltip } from '@mui/material';
 import React from 'react';
-import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { Pie, PieChart, ResponsiveContainer } from 'recharts';
 
 // import css filr
 import './progressBar.scss';
 
 function ProgressBar() {
-    const percentage = 74;
+    const data01 = [
+        { name: 'Users', value: 23 },
+        { name: 'Hotels', value: 30 },
+        { name: 'Rooms', value: 15 },
+        { name: 'Blogs', value: 19 },
+        { name: 'Balance', value: 20 },
+    ];
+
     return (
         <div className="progress_bar">
             <div className="top">
@@ -20,12 +27,21 @@ function ProgressBar() {
 
             <div className="middle">
                 <div className="progress">
-                    <CircularProgressbar
-                        value={percentage}
-                        text={`${percentage}%`}
-                        strokeWidth={5}
-                        className="progress_main"
-                    />
+                    <ResponsiveContainer width="100%" height="100%">
+                        <PieChart width={400} height={400}>
+                            <Pie
+                                dataKey="value"
+                                isAnimationActive={false}
+                                data={data01}
+                                cx="50%"
+                                cy="50%"
+                                outerRadius={80}
+                                fill="#4665fdce"
+                                label
+                            />
+                            <Tooltip />
+                        </PieChart>
+                    </ResponsiveContainer>
                 </div>
                 <p>Total sales made today.</p>
                 <p className="price">
@@ -38,12 +54,6 @@ function ProgressBar() {
                 <p>Previous transection processing. Last payments may not be included.</p>
 
                 <div className="botom_nested">
-                    <div className="nested_nested">
-                        <p>Target</p>
-                        <p className="pricee ">
-                            <KeyboardArrowDownOutlinedIcon /> $10.4k
-                        </p>
-                    </div>
                     <div className="nested_nested">
                         <p>Last Week</p>
                         <p className="pricee">
