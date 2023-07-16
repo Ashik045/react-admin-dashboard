@@ -30,9 +30,9 @@ function ItemLists({ type }) {
                 linkto: '/users',
             };
             break;
-        case 'order':
+        case 'orders':
             data = {
-                title: 'HOTELS',
+                title: 'ORDERS',
                 isMoney: false,
                 count: 34,
 
@@ -45,15 +45,15 @@ function ItemLists({ type }) {
                         className="icon"
                     />
                 ),
-                link: 'View all hotels',
-                linkto: '/',
+                link: 'View all orders',
+                linkto: '/orders',
             };
             break;
-        case 'earning':
+        case 'products':
             data = {
-                title: 'BLOGS',
+                title: 'PRODUCTS',
                 isMoney: true,
-                count: 67,
+                count: 107,
                 icon: (
                     <AttachMoneyOutlinedIcon
                         style={{
@@ -63,8 +63,8 @@ function ItemLists({ type }) {
                         className="icon"
                     />
                 ),
-                link: 'See all blogs',
-                linkto: '/',
+                link: 'See all products',
+                linkto: '/products',
             };
             break;
         case 'balance':

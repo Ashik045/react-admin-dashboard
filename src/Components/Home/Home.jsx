@@ -11,7 +11,9 @@ function Home() {
     //
     return (
         <div className="home">
-            <Sidebar />
+            <div className="home_sidebar">
+                <Sidebar />
+            </div>
 
             <div className="home_main">
                 <Navbar />
@@ -20,8 +22,8 @@ function Home() {
 
                 <div className="home_items">
                     <ItemLists type="user" />
-                    <ItemLists type="order" />
-                    <ItemLists type="earning" />
+                    <ItemLists type="orders" />
+                    <ItemLists type="products" />
                     <ItemLists type="balance" />
                 </div>
 

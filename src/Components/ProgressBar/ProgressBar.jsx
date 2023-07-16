@@ -36,7 +36,7 @@ function ProgressBar() {
                                 cx="50%"
                                 cy="50%"
                                 outerRadius={80}
-                                fill="#4665fdce"
+                                fill="#536def"
                                 label
                             />
                             <Tooltip />

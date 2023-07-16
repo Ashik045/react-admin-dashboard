@@ -12,7 +12,9 @@ function Lists({ type }) {
     //
     return (
         <div className="list_page">
-            <Sidebar />
+            <div className="home_sidebar">
+                <Sidebar />
+            </div>
 
             <div className="list_page_main">
                 <Navbar />

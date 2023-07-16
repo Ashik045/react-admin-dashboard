@@ -8,7 +8,9 @@
       padding: 20px 25px;
       .new_page_content {
         box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-        display: flex;
+        display: grid;
+        grid-template-columns: 37% 60%;
+        justify-content: center;
         gap: 10;
         padding: 20px;
         border-radius: 4px;
@@ -74,6 +76,33 @@
               border: 1px solid #7451f8;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .add_new {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+
+    .home_sidebar {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .add_new {
+    .new_page {
+      .new_page_main {
+        .new_page_content {
+          display: grid;
+          grid-template-columns: 95%;
+          justify-content: center;
+          gap: 40px;
         }
       }
     }

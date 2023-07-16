@@ -10,7 +10,9 @@ function Detail() {
     // const { userId, productId } = useParams();
     return (
         <div className="details">
-            <Sidebar />
+            <div className="home_sidebar">
+                <Sidebar />
+            </div>
 
             <div className="detail_page_main">
                 <Navbar />

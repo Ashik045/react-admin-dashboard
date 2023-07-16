@@ -59,7 +59,9 @@ function AddNew({ inputs, titlee, type }) {
     };
     return (
         <div className="add_new">
-            <Sidebar />
+            <div className="home_sidebar">
+                <Sidebar />
+            </div>
 
             <div className="new_page">
                 <Navbar />

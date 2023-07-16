@@ -1,0 +1,17 @@
+.orders {
+  display: grid;
+  grid-template-columns: 17% 83%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .orders {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+
+    .home_sidebar {
+      display: none;
+    }
+  }
+}

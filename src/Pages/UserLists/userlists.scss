@@ -36,3 +36,15 @@
     }
   }
 }
+
+@media screen and (max-width: 992px) {
+  .list_page {
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+
+    .home_sidebar {
+      display: none;
+    }
+  }
+}

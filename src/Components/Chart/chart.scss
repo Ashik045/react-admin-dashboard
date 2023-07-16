@@ -1,6 +1,6 @@
 .chart_sec {
-  display: flex;
-  flex: 8;
+  display: grid;
+  grid-template-columns: 100%;
   box-sizing: border-box;
 
   .title {

@@ -3,7 +3,6 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import BarChartIcon from '@mui/icons-material/BarChart';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
 import DashboardIcon from '@mui/icons-material/Dashboard';
-import LibraryBooksIcon from '@mui/icons-material/LibraryBooks';
 import LogoutIcon from '@mui/icons-material/Logout';
 import PersonIcon from '@mui/icons-material/Person';
 import SettingsRoundedIcon from '@mui/icons-material/SettingsRounded';
@@ -21,7 +20,7 @@ function Sidebar() {
         <div className="sidebar">
             <div className="logo">
                 <Link to="/" style={{ textDecoration: 'none' }}>
-                    <h3 className="text_none">adminDashboard</h3>
+                    <h3 className="text_none">AdminDashboard</h3>
                 </Link>
             </div>
 
@@ -46,13 +45,13 @@ function Sidebar() {
                             <TableChartIcon className="icon" /> Products
                         </li>
                     </Link>
-                    <Link to="/blogs" style={{ textDecoration: 'none' }}>
+                    <Link to="/orders" style={{ textDecoration: 'none' }}>
                         <li>
-                            <LibraryBooksIcon className="icon" /> Blogs
+                            <CreditCardIcon className="icon" /> Orders
                         </li>
                     </Link>
                     <li>
-                        <CreditCardIcon className="icon" /> Orders
+                        <CreditCardIcon className="icon" /> Balance
                     </li>
                     <li>
                         <BarChartIcon className="icon" /> Status

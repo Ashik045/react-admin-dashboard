@@ -1,14 +1,15 @@
 import { useContext } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './app.scss';
 import { ColorContext } from './ColorContext/darkContext';
 import Home from './Components/Home/Home';
+import Orders from './Components/Orders/Orders';
 import AddNew from './Pages/AddNew/AddNew';
 import BlogDetail from './Pages/BlogDetail/BlogDetail';
 import Blogs from './Pages/Blogs/Blogs';
 import Detail from './Pages/Detail/Detail';
 import Login from './Pages/Login/Login';
 import Lists from './Pages/UserLists/UserLists';
+import './app.scss';
 
 // Dynamicaly change the data for different pages
 const userInpDetails = [
@@ -165,6 +166,8 @@ function App() {
                                 }
                             />
                         </Route>
+
+                        <Route path="orders" element={<Orders />} />
 
                         {/* nested routes */}
                         <Route path="products">
