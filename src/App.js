@@ -11,7 +11,7 @@ import Login from './Pages/Login/Login';
 import Lists from './Pages/UserLists/UserLists';
 import './app.scss';
 
-// Dynamicaly change the data for different pages
+// Dynamicaly change the data for different pages(replaceable)
 const userInpDetails = [
     {
         id: 2,

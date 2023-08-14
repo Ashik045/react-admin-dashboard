@@ -4,6 +4,8 @@ import { Area, AreaChart, CartesianGrid, Tooltip, XAxis } from 'recharts';
 // import css file
 import './chart.scss';
 
+/* The `data` array is used to store the data points for the chart. Each object in the array represents
+a data point and has two properties: `name` and `total`. */
 // Place your own data here
 const data = [
     {
